@@ -3,75 +3,27 @@ layout: workshop      # DON'T CHANGE THIS.
 # More detailed instructions (including how to fill these variables for an
 # online workshop) are available at
 # https://carpentries.github.io/workshop-template/customization/index.html
-venue: "CIMAT"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
-address: "Callejón de Jalisco, Valenciana"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
-country: "mx"       # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
+venue: "Nodo Nacional de Bioinformática"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
+address: "online"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
+country: "mx"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
 language: "es"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
-latitude: "21.01"        # decimal latitude of workshop venue (use https://www.latlong.net/)
-longitude: "-101.25"        # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "Aug 19-24, 2024"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "9:00 am - 5:00 pm CEST"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
-startdate: 2024-08-19       # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: 2024-08-24         # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Nelly Sélem", "Shaday Guerrero", "Pablo Rosiles","Andres Arredondo"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Andres Arredondo"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-email: ["nselem@ematmor.unam.mx","shaday@matmor.unam.mx"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes: https://pad.carpentries.org/2024-08-19-GenomeMining # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
-eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)         # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+latitude: "45"        # decimal latitude of workshop venue (use https://www.latlong.net/)
+longitude: "-1"       # decimal longitude of the workshop venue (use https://www.latlong.net)
+humandate: "Ene 22-26,2024"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "9:00 am- 4:00 pm"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
+startdate: 2024-01-22      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2024-01-26        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Nelly Sélem-Mojica", "César Aguilar", "Shaday Guerrero-Flores"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Marisol Navarro-Miranda", "José Abel Lovaco-Flores", "Andrés Arredondo-Cruz", "Paulina Mayell Mejía-Ponce", "Diana Hernández-Oaxaca","Francisco Maximiliano González-Serrano", "Rafael Pérez", "Anton Pashkov"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+email: ["nselem@matmor.unam.mx"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+collaborative_notes: https://pad.carpentries.org/MineriaGenomica # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
+eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
-
-
-
-{% comment %}
-Check DC curriculum
-{% endcomment %}
-
-{% if site.carpentry == "dc" %}
-{% unless site.curriculum == "dc-astronomy" or site.curriculum == "dc-ecology" or site.curriculum == "dc-genomics" or site.curriculum == "dc-geospatial" or site.curriculum == "dc-image" or site.curriculum == "dc-socsci" %}
-<div class="alert alert-warning">
-It looks like you are setting up a website for a Data Carpentry curriculum but you haven't specified the curriculum type in the <code>_config.yml</code> file (current value in <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", possible values: <code>dc-image</code>, <code>dc-astronomy</code>, <code>dc-ecology</code>, <code>dc-genomics</code>, <code>dc-socsci</code>, or <code>dc-geospatial</code>). After editing this file, you need to run <code>make serve</code> again to see the changes reflected.
-</div>
-{% endunless %}
-{% endif %}
-
-{% comment %}
-Check SWC curriculum
-{% endcomment %}
-
-{% if site.carpentry == "swc" %}
-{% unless site.curriculum == "swc-inflammation" or site.curriculum == "swc-gapminder" %}
-<div class="alert alert-warning">
-It looks like you are setting up a website for a Software Carpentry curriculum but you haven't specified the curriculum type in the <code>_config.yml</code> file (current value in <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", possible values: <code>swc-inflammation</code>, or <code>swc-gapminder</code>). After editing this file, you need to run <code>make serve</code> again to see the changes reflected.
-</div>
-{% endunless %}
-{% endif %}
-
-{% comment %}
-EVENTBRITE
-
-This block includes the Eventbrite registration widget if
-'eventbrite' has been set in the header.  You can delete it if you
-are not using Eventbrite, or leave it in, since it will not be
-displayed if the 'eventbrite' field in the header is not set.
-{% endcomment %}
-{% if page.eventbrite %}
-<strong>Some adblockers block the registration window. If you do not see the
-  registration box below, please check your adblocker settings.</strong>
-<iframe
-  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
-  frameborder="0"
-  width="100%"
-  height="280px"
-  scrolling="auto">
-</iframe>
-{% endif %}
-
 
 <h2 id="general">General Information</h2>
 
 {% comment %}
 INTRODUCTION
-
 Edit the general explanatory paragraph below if you want to change
 the pitch.
 {% endcomment %}
@@ -161,7 +113,7 @@ This block displays the date and links to Google Calendar.
 {% if page.humandate %}
 <p id="when">
   <strong>When:</strong>
-  {{page.humandate}}; {{page.humantime}}
+  {{page.humandate}}.
   {% include workshop_calendar.html %}
 </p>
 {% endif %}
@@ -191,18 +143,24 @@ special instructions.
 {% endcomment %}
 <p id="accessibility">
   <strong>Accessibility:</strong>
-  We are committed to making this workshop
-  accessible to everybody. 
 {% if online == "false" %}
-  The workshop organizers have checked that:
-<p>
-  <ul>
-    <li>The room is wheelchair / scooter accessible.</li>
-    <li>Accessible restrooms are available.</li>
-  </ul>
-{% endif %}
+  We are committed to making this workshop
+  accessible to everybody.  For workshops at a physical location, the workshop organizers have checked that:
 </p>
-<p>We are dedicated to providing a positive and accessible learning environment for all. 
+<ul>
+  <li>The room is wheelchair / scooter accessible.</li>
+  <li>Accessible restrooms are available.</li>
+</ul>
+<p>
+  Materials will be provided in advance of the workshop and
+  large-print handouts are available if needed by notifying the
+  organizers in advance.  If we can help making learning easier for
+  you (e.g. sign-language interpreters, lactation facilities) please
+  get in touch (using contact details below) and we will
+  attempt to provide them.
+</p>
+{% else %}
+  We are dedicated to providing a positive and accessible learning environment for all. 
   We do not require participants to provide documentation of disabilities or disclose any unnecessary personal information. 
   However, we do want to help create an inclusive, accessible experience for all participants. 
   We encourage you to share any information that would be helpful to make your Carpentries experience accessible.
@@ -210,13 +168,7 @@ special instructions.
   <a href="https://carpentries.typeform.com/to/B2OSYaD0">accommodation request form</a>.
   If you have questions or need assistance with the accommodation form please <a href="mailto:team@carpentries.org">email us</a>.
 </p>
-<p>
-  <a href="https://glosario.carpentries.org/">Glosario</a> is a multilingual glossary 
-  for computing and data science terms. The glossary helps 
-  learners attend workshops and use our lessons to make sense of computational and programming jargon written in English by offering it 
-  in their native language. Translating data science terms also provides a teaching tool for Carpentries Instructors to reduce barriers 
-  for their learners.
-</p>
+{% endif %}
 
 {% comment %}
 CONTACT EMAIL ADDRESS
@@ -342,13 +294,6 @@ SCHEDULE
 
 Show the workshop's schedule.
 
-Small changes to the schedule can be made by modifying the
-`schedule.html` found in the `_includes` folder for your
-workshop type (`swc`, `lc`, or `dc`). Edit the items and
-times in the table to match your plans. You may also want to
-change 'Day 1' and 'Day 2' to be actual dates or days of the
-week.
-
 For larger changes, a blank template for a 4-day workshop
 (useful for online teaching for instance) can be found in
 `_includes/custom-schedule.html`. Add the times, and what
@@ -360,18 +305,7 @@ of code below the Schedule `<h2>` header below with
 {% endcomment %}
 
 <h2 id="schedule">Schedule</h2>
-
-{% if site.carpentry == "swc" %}
-{% include swc/schedule.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/schedule.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/schedule.html %}
-{% elsif site.carpentry == "incubator" %}
-This workshop is teaching a lesson in 
-<a href="https://carpentries-incubator.org/">The Carpentries Incubator</a>. Please check <a href="{{site.incubator_lesson_site}}">the lesson homepage</a> for a list of lesson sections and estimated timings.
-{% endif %}
-
+{% include custom-schedule.html %}
 {% comment %}
 Edit/replace the text above if you want to include a schedule table.
 See the contents of the _includes/custom-schedule.html file for an example of
@@ -379,7 +313,7 @@ how one of these schedule tables is constructed.
 {% endcomment %}
 
 {% if site.pilot %}
-The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. Please <a href="mailto:{{page.email}}">contact the workshop organisers</a> if you would like more information about the planned schedule.
+The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. Please [contact the workshop organisers](#contact) if you want more information about the planned schedule.
 {% endif %}
 
 <hr/>
@@ -445,6 +379,6 @@ during the workshop.
 {% include lc/setup.html %}
 {% elsif site.carpentry == "incubator" %}
 Please check the "Setup" page of
-<a href="{{site.incubator_lesson_site}}">the lesson homepage</a> for instructions to follow
+[the lesson site]({{ site.incubator_lesson_site }}) for instructions to follow
 to obtain the software and data you will need to follow the lesson.
 {% endif %}
