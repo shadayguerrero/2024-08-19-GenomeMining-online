@@ -60,7 +60,7 @@ title: "Pangenomics and Genome Mining"
 # in The Carpentries Incubator).
 #
 # For an Incubator workshop, uncomment the line below and add the URL of the lesson site.
-incubator_lesson_site: "https://czirion.github.io/genome-mining-workshop/"
+incubator_lesson_site: "https://carpentries-incubator.github.io/genome-mining-workshop/"
 #
 # For an Incubator workshop, uncomment the line below and add the URL of your pre-workshop survey
 incubator_pre_survey: "https://forms.gle/VKDEZaFbjsA3gJ2C6"
