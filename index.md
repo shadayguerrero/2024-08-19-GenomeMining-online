@@ -14,7 +14,7 @@ humantime: "14:00  - 16:00 pm "    # human-readable times for the workshop e.g.,
 startdate: 2024-08-19       # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2024-08-24         # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Nelly Sélem", "Shaday Guerrero", "Marc Chevrete", "Pablo Rosiles","Andres Cumsille"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Andres Arredondo"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+helper: ["Andres Arredondo", "Anton Paskov"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["nselem@ematmor.unam.mx","shaday@matmor.unam.mx"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes: https://pad.carpentries.org/2024-08-19-GenomeMining # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
