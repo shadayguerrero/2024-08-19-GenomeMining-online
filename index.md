@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/e92551fb-bf1d-4ed1-8972-757c730eb509)
+![image](https://github.com/user-attachments/assets/361b64ba-2253-4be8-b362-e13c83c6802e)
 ---
 layout: workshop      # DON'T CHANGE THIS.
 # More detailed instructions (including how to fill these variables for an
@@ -313,7 +315,8 @@ how one of these schedule tables is constructed.
 {% endcomment %}
 
 {% if site.pilot %}
-Thanks you PAPIIT project IA106323 "Pan-cluster, herramientas de Big data para caracterización pangenómica de clústeres biosintéticos en microorganismos"
+**Thanks you PAPIIT project IA106323 "Pan-cluster, herramientas de Big data para caracterización pangenómica de clústeres biosintéticos en microorganismos"**
+
 The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. Please [contact the workshop organisers](#contact) if you want more information about the planned schedule.
 {% endif %}
 
