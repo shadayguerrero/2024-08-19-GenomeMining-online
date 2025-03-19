@@ -313,6 +313,7 @@ how one of these schedule tables is constructed.
 {% endcomment %}
 
 {% if site.pilot %}
+Thanks you PAPIIT project IA106323 "Pan-cluster, herramientas de Big data para caracterización pangenómica de clústeres biosintéticos en microorganismos"
 The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. Please [contact the workshop organisers](#contact) if you want more information about the planned schedule.
 {% endif %}
 
